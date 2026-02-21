@@ -1,0 +1,9 @@
+venv/
+__pycache__/
+*.pyc
+cron.log
+build/
+.DS_Store
+.build/
+.git/
+docs/

@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Caddy Migration - Abby Jane - Notes</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link href="../../css/codehilite.css" rel="stylesheet">
+        <link href="../../css/solarized-light.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/github.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Abby Jane - Notes</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Thoughts <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../thoughts/on-identity/" class="dropdown-item">On Identity</a>
+</li>
+                                    
+<li>
+    <a href="../../thoughts/her-words/" class="dropdown-item">Her Words</a>
+</li>
+                                    
+<li>
+    <a href="../../thoughts/nyc-police-transit/" class="dropdown-item">New York City, Police, Transit, and Thoughts</a>
+</li>
+                                    
+<li>
+    <a href="../../thoughts/queer-soup-monthly/" class="dropdown-item">Queer Soup Monthly</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">CLI Scripts <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../cli_scripts/create-local-git-repository/" class="dropdown-item">Create local git repository</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Fragments <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../fragments/media/" class="dropdown-item">Media</a>
+</li>
+                                    
+<li>
+    <a href="../../fragments/github/" class="dropdown-item">Github Accounts</a>
+</li>
+                                    
+<li>
+    <a href="../../fragments/midwest/" class="dropdown-item">The Midwest</a>
+</li>
+                                    
+<li>
+    <a href="../../fragments/old-scripts/" class="dropdown-item">Old Scripts</a>
+</li>
+                                    
+<li>
+    <a href="../../fragments/macros/" class="dropdown-item">Macros Test</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Guides <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../scores_site/" class="dropdown-item">Scores Site Instructions</a>
+</li>
+                                    
+<li>
+    <a href="../markdown-cheat-sheet/" class="dropdown-item">Macro Syntax Error</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">Caddy Migration</a>
+</li>
+                                    
+<li>
+    <a href="../css-formatting/" class="dropdown-item">CSS Formatting</a>
+</li>
+                                    
+<li>
+    <a href="../drupal-install/" class="dropdown-item">Drupal Install</a>
+</li>
+                                    
+<li>
+    <a href="../gender-change-letter-iowa/" class="dropdown-item">Gender Designation Change Letter (Iowa)</a>
+</li>
+                                    
+<li>
+    <a href="../medicine-vitamin-schedule/" class="dropdown-item">Medicine and Vitamin Schedule</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Reading <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../reading/taoteching/" class="dropdown-item">Ethical Taoist Reading List</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Constitutional Amendments <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../constitutional_amendments/pardon/" class="dropdown-item">Pardon Power Accountability Amendment</a>
+</li>
+                                    
+<li>
+    <a href="../../constitutional_amendments/vesting/" class="dropdown-item">Vesting Clause Amendment</a>
+</li>
+                                    
+<li>
+    <a href="../../constitutional_amendments/jurisdiction/" class="dropdown-item">Judicial Access Amendment</a>
+</li>
+                                    
+<li>
+    <a href="../../constitutional_amendments/14th-amendment-restoration/" class="dropdown-item">Fourteenth Amendment Restoration</a>
+</li>
+                                    
+<li>
+    <a href="../../constitutional_amendments/amending-amendment/" class="dropdown-item">Amending Amendment</a>
+</li>
+                                    
+<li>
+    <a href="../../constitutional_amendments/repeal-eleventh/" class="dropdown-item">11th Amendment Repeal</a>
+</li>
+                                    
+<li>
+    <a href="../../constitutional_amendments/revised-era/" class="dropdown-item">Revised Equal Rights Amendment</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Court Cases <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../court_cases/morton-v-psu/" class="dropdown-item">Morton v. Pennsylvania State University, et.al.</a>
+</li>
+                                    
+<li>
+    <a href="../../court_cases/csj/" class="dropdown-item">Thoughts on eventual Cross Summary Judgement Motions</a>
+</li>
+                                    
+<li>
+    <a href="../../court_cases/rule12b/" class="dropdown-item">Thoughts on the impending Rule 12(b) Motion to Dismiss</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Vacation <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Sportsball Europe 2026</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../vacation/sportsball_europe_2026/planning/" class="dropdown-item">Planning Checklist</a>
+</li>
+            
+<li>
+    <a href="../../vacation/sportsball_europe_2026/schedule/" class="dropdown-item">Schedule</a>
+</li>
+            
+<li>
+    <a href="../../vacation/sportsball_europe_2026/cricket/" class="dropdown-item">Cricket Scoring</a>
+</li>
+            
+<li>
+    <a href="../../vacation/sportsball_europe_2026/football/" class="dropdown-item">Football</a>
+</li>
+            
+<li>
+    <a href="../../vacation/sportsball_europe_2026/lords-etiquette/" class="dropdown-item">Lord's Etiquette</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Japanese Birthday</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../vacation/japanese_birthday/schedule/" class="dropdown-item">Schedule</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Work <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Grinnell College</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../work/grinnell-college/colleague/" class="dropdown-item">Colleague</a>
+</li>
+            
+<li>
+    <a href="../../work/grinnell-college/overview-systems/" class="dropdown-item">Overview - Grinnell College</a>
+</li>
+            
+<li>
+    <a href="../../work/grinnell-college/transition-grinnell/" class="dropdown-item">Transition at Grinnell College</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Theory</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../work/theory/de-customization/" class="dropdown-item">De-Customization</a>
+</li>
+            
+<li>
+    <a href="../../work/theory/high-reliability/" class="dropdown-item">High reliability</a>
+</li>
+            
+<li>
+    <a href="../../work/theory/overriding-beliefs/" class="dropdown-item">Overriding Beliefs</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../markdown-cheat-sheet/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../css-formatting/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                        <li class="nav-item">
+                          <a href="../../tags.html" class="nav-link">
+                            <i class="fa fa-tags"></i> Tags
+                          </a>
+                        </li>
+
+                      <!---->
+                        <!---->
+                      <!---->
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container col-md-8">
+              <div class="zettel">
+    
+    <div class="file-header">
+      <div class="row align-items-center">
+        <div class="col-8">
+          
+        </div>
+        <div class="col-4 text-right date">
+              <span data-tooltip="Edit zettel's source">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-pencil" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5L13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175l-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                </svg>
+              </span>
+          
+        </div>
+      </div>
+    </div>
+    
+    <div class="file-body">
+      <h1 id="caddy-migration">Caddy Migration<a class="headerlink" href="#caddy-migration" title="Permanent link">&para;</a></h1>
+<h2 id="preparation">Preparation<a class="headerlink" href="#preparation" title="Permanent link">&para;</a></h2>
+<h3 id="snapshot">Snapshot<a class="headerlink" href="#snapshot" title="Permanent link">&para;</a></h3>
+<p>Files in smersh:/etc/nginx are backed up to DARPA/archive/nginx</p>
+<pre><code class="language-bash">rsync -ahq --no-links \
+   abby@smersh.local:/etc/nginx/ \ 
+ /media/abby/DARPA/archive/nginx/
+</code></pre>
+<p>Before shutdown, this is what's listening now:</p>
+<p><a href="https://notes.cloverdalelane.com/guides/docs_caddy/listening.out" target="_blank">Listening output</a></p>
+<h2 id="nginx">Nginx<a class="headerlink" href="#nginx" title="Permanent link">&para;</a></h2>
+<h3 id="stopping-and-disabling-nginx">Stopping and disabling Nginx<a class="headerlink" href="#stopping-and-disabling-nginx" title="Permanent link">&para;</a></h3>
+<p>Nginx prevents it from grabbing ports on boot</p>
+<pre><code class="language-bash">sudo systemctl stop nginx
+</code></pre>
+<pre><code class="language-output">sudo systemctl disable nginx
+Synchronizing state of nginx.service with SysV service script with /usr/lib/systemd/systemd-sysv-install.
+Executing: /usr/lib/systemd/systemd-sysv-install disable nginx
+Removed '/etc/systemd/system/multi-user.target.wants/nginx.service'.
+</code></pre>
+<h3 id="confirm-ports-are-free">Confirm ports are free<a class="headerlink" href="#confirm-ports-are-free" title="Permanent link">&para;</a></h3>
+<pre><code class="language-bash">sudo ss -ltnp | egrep ':(80|443)\b' || echo &quot;80/443 free&quot;
+80/443 free
+</code></pre>
+<h2 id="install-caddy">Install Caddy<a class="headerlink" href="#install-caddy" title="Permanent link">&para;</a></h2>
+<h3 id="install-instructions-from-caddy-documentation">Install instructions from <a href="https://caddyserver.com/docs/install#debian-ubuntu-raspbian">Caddy Documentation</a><a class="headerlink" href="#install-instructions-from-caddy-documentation" title="Permanent link">&para;</a></h3>
+<pre><code class="language-bash">sudo apt install -y debian-keyring debian-archive-keyring apt-transport-https curl
+curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/gpg.key' | sudo gpg --dearmor -o /usr/share/keyrings/caddy-stable-archive-keyring.gpg
+sudo chmod o+r /usr/share/keyrings/caddy-stable-archive-keyring.gpg
+sudo chmod o+r /etc/apt/sources.list.d/caddy-stable.list
+sudo apt update
+sudo apt install caddy
+</code></pre>
+<p><a href="https://notes.cloverdalelane.com/guides/docs_caddy/caddy_install.out" target="_blank">Caddy install commands</a></p>
+<h3 id="start-caddy">Start Caddy<a class="headerlink" href="#start-caddy" title="Permanent link">&para;</a></h3>
+<pre><code class="language-bash">sudo systemctl enable --now caddy
+</code></pre>
+<pre><code class="language-output">sudo systemctl status caddy --no-pager
+● caddy.service - Caddy
+     Loaded: loaded (/usr/lib/systemd/system/caddy.service; enabled; preset: enabled)
+     Active: active (running) since Sat 2026-01-03 10:48:34 CST; 7min ago
+ Invocation: 96de21dd3abb4a83b803f25174541c39
+       Docs: https://caddyserver.com/docs/
+   Main PID: 2519125 (caddy)
+      Tasks: 10 (limit: 18889)
+     Memory: 14.1M (peak: 14.6M)
+        CPU: 128ms
+     CGroup: /system.slice/caddy.service
+             └─2519125 /usr/bin/caddy run --environ --config /etc/caddy/Caddyfile
+
+Jan 03 10:48:34 smersh caddy[2519125]: {&quot;level&quot;:&quot;warn&quot;,&quot;ts&quot;:1767458914.5065043,&quot;logger&quot;:&quot;http.auto_https&quot;,&quot;msg&quot;:&quot;server is listening onl…p_port&quot;:80}
+Jan 03 10:48:34 smersh caddy[2519125]: {&quot;level&quot;:&quot;info&quot;,&quot;ts&quot;:1767458914.5066855,&quot;logger&quot;:&quot;tls.cache.maintenance&quot;,&quot;msg&quot;:&quot;started backgroun…00070ca80&quot;}
+Jan 03 10:48:34 smersh caddy[2519125]: {&quot;level&quot;:&quot;warn&quot;,&quot;ts&quot;:1767458914.5067377,&quot;logger&quot;:&quot;http&quot;,&quot;msg&quot;:&quot;HTTP/2 skipped because it requires…ddr&quot;:&quot;:80&quot;}
+Jan 03 10:48:34 smersh caddy[2519125]: {&quot;level&quot;:&quot;warn&quot;,&quot;ts&quot;:1767458914.5067523,&quot;logger&quot;:&quot;http&quot;,&quot;msg&quot;:&quot;HTTP/3 skipped because it requires…ddr&quot;:&quot;:80&quot;}
+Jan 03 10:48:34 smersh caddy[2519125]: {&quot;level&quot;:&quot;info&quot;,&quot;ts&quot;:1767458914.50676,&quot;logger&quot;:&quot;http.log&quot;,&quot;msg&quot;:&quot;server running&quot;,&quot;name&quot;:&quot;srv0&quot;,&quot;p…&quot;h2&quot;,&quot;h3&quot;]}
+Jan 03 10:48:34 smersh caddy[2519125]: {&quot;level&quot;:&quot;info&quot;,&quot;ts&quot;:1767458914.5071228,&quot;msg&quot;:&quot;autosaved config (load with --resume flag)&quot;,&quot;file&quot;…save.json&quot;}
+Jan 03 10:48:34 smersh caddy[2519125]: {&quot;level&quot;:&quot;info&quot;,&quot;ts&quot;:1767458914.5071929,&quot;msg&quot;:&quot;serving initial configuration&quot;}
+Jan 03 10:48:34 smersh systemd[1]: Started caddy.service - Caddy.
+Jan 03 10:48:34 smersh caddy[2519125]: {&quot;level&quot;:&quot;info&quot;,&quot;ts&quot;:1767458914.543985,&quot;logger&quot;:&quot;tls&quot;,&quot;msg&quot;:&quot;cleaning storage unit&quot;,&quot;storage&quot;:&quot;Fi…are/caddy&quot;}
+Jan 03 10:48:34 smersh caddy[2519125]: {&quot;level&quot;:&quot;info&quot;,&quot;ts&quot;:1767458914.5775955,&quot;logger&quot;:&quot;tls&quot;,&quot;msg&quot;:&quot;finished cleaning storage units&quot;}
+Hint: Some lines were ellipsized, use -l to show in full.
+</code></pre>
+<h2 id="get-a-site-working">Get a site working<a class="headerlink" href="#get-a-site-working" title="Permanent link">&para;</a></h2>
+<h3 id="reverse-proxy">Reverse Proxy<a class="headerlink" href="#reverse-proxy" title="Permanent link">&para;</a></h3>
+<pre><code class="language-config">blog.example.com {
+    reverse_proxy 127.0.0.1:PORT
+    }
+</code></pre>
+<h3 id="other-example">Other example<a class="headerlink" href="#other-example" title="Permanent link">&para;</a></h3>
+<pre><code class="language-config">notes.cloverdalelane.com {
+    root * /var/www/abbynet/notes/site
+    file_server
+
+    basic_auth {
+        abby &lt;PASSWORD_HASH&gt;
+    }
+}
+</code></pre>
+<p><a href="https://notes.cloverdalelane.com/guides/docs_caddy/Caddyfile" target="_blank">Caddyfile</a></p>
+    </div>
+    
+  </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Zettelkasten built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        <script src="../../js/base.js" defer></script>
+        <script src="../../js/copyable.js" defer></script>
+          <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search the entire zettelkasten. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

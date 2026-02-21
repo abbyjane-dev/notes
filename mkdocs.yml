@@ -1,0 +1,83 @@
+site_name: "Abby Jane - Notes"
+
+theme:
+  name: zettelkasten-solarized-light
+# rtd-dropdown
+  language: en
+  palette:
+    scheme: slate
+    primary: violet
+    accent: teal
+  features:
+    - navigation.sections
+    - search.suggest
+    - content.code.copy
+
+nav:
+    - Home: index.md
+    - Thoughts:
+        - thoughts/on-identity.md
+        - thoughts/her-words.md
+        - thoughts/nyc-police-transit.md
+        - thoughts/queer-soup-monthly.md
+ #       - thoughts/filecabinet.md
+    - "CLI Scripts":
+        - cli_scripts/create-local-git-repository.md
+    - Fragments:
+        - fragments/media.md
+        - fragments/github.md
+        - fragments/midwest.md
+        - fragments/old-scripts.md
+        - fragments/macros.md
+    - Guides:
+        - guides/scores_site.md
+        - guides/markdown-cheat-sheet.md
+        - guides/caddy.md
+        - guides/css-formatting.md
+        - guides/drupal-install.md
+        - guides/gender-change-letter-iowa.md
+        - guides/medicine-vitamin-schedule.md
+    - Reading:
+        - reading/taoteching.md
+    - "Constitutional Amendments":
+        - constitutional_amendments/pardon.md
+        - constitutional_amendments/vesting.md
+        - constitutional_amendments/jurisdiction.md
+        - constitutional_amendments/14th-amendment-restoration.md
+        - constitutional_amendments/amending-amendment.md
+        - constitutional_amendments/repeal-eleventh.md
+        - constitutional_amendments/revised-era.md
+    - "Court Cases":
+        - court_cases/morton-v-psu.md
+        - court_cases/csj.md
+        - court_cases/rule12b.md
+    - Vacation:
+        - "Sportsball Europe 2026":
+            - vacation/sportsball_europe_2026/planning.md
+            - vacation/sportsball_europe_2026/schedule.md
+            - vacation/sportsball_europe_2026/cricket.md
+            - vacation/sportsball_europe_2026/football.md
+            - vacation/sportsball_europe_2026/lords-etiquette.md
+        - "Japanese Birthday":
+            - vacation/japanese_birthday/schedule.md
+    - Work:
+        - "Grinnell College":
+            - work/grinnell-college/colleague.md
+            - work/grinnell-college/overview-systems.md
+            - work/grinnell-college/transition-grinnell.md
+        - Theory:
+            - work/theory/de-customization.md
+            - work/theory/high-reliability.md
+            - work/theory/overriding-beliefs.md
+        
+markdown_extensions:
+  - attr_list
+  - def_list
+  - footnotes
+  - tables
+  - toc:
+      permalink: true
+
+plugins:
+    - search
+    - macros
