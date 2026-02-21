@@ -1,7 +1,7 @@
 site_name: "Abby Jane - Notes"
 
 theme:
-  name: docskimmer
+  name: material
 #  name: zettelkasten-solarized-light
 # rtd-dropdown
   language: en
