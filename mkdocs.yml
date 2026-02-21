@@ -6,12 +6,14 @@ theme:
 # rtd-dropdown
   language: en
   palette:
-    scheme: slate
-    primary: violet
-    accent: teal
+    accent: purple
+    # scheme: slate
+    # primary: violet
+    # accent: teal
+  favicon: docs/img/favicon.ico
   features:
     - navigation.sections
-    # - search.suggest
+    - search.suggest
     - content.code.copy
 
 nav:
