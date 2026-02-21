@@ -1,7 +1,7 @@
 site_name: "Abby Jane - Notes"
 
 theme:
-  name: shadcn
+  name: docskimmer
 #  name: zettelkasten-solarized-light
 # rtd-dropdown
   language: en
@@ -11,7 +11,7 @@ theme:
     accent: teal
   features:
     - navigation.sections
-    - search.suggest
+    # - search.suggest
     - content.code.copy
 
 nav:
