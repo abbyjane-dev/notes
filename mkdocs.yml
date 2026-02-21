@@ -1,7 +1,8 @@
 site_name: "Abby Jane - Notes"
 
 theme:
-  name: rtd-dropdown
+  name: shadcn
+#  name: zettelkasten-solarized-light
 # rtd-dropdown
   language: en
   palette:
